@@ -1,0 +1,79 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #f9f9f9;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+}
+
+header {
+  padding: 25px;
+  display: flex;
+  justify-content: center;
+}
+
+.sel-input {
+  width: 250px;
+  padding: 5px 10px;
+  font-size: 1rem;
+  font-family: "Roboto", sans-serif;
+  border: 1px solid #125b50;
+  border-radius: 5px;
+  outline: none;
+}
+
+.sel-btn {
+  font-size: 1rem;
+  padding: 8px 16px;
+  margin-left: 10px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #125b50;
+  border: 1px solid #125b50;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.sel-btn:hover {
+  background-color: #125b50;
+  color: #fff;
+}
+
+.container {
+  width: 100%;
+  display: flex;
+}
+
+.details-container,
+.selected-container {
+  width: 50%;
+}
+
+.selected-container {
+  margin-left: 10px;
+}
+
+.details-table,
+.selected-table {
+  border-collapse: separate;
+  border-spacing: 0 7px;
+}
+
+.details-row td,
+.selected-row td {
+  padding: 7px;
+}
+
+.details-row {
+  background-color: rgba(243, 145, 137, 0.5);
+}
+
+input[type="checkbox"]:checked {
+  accent-color: #125b50;
+}
